@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Windwalker — Strandbeest Workshop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div id="intro" class="overlay visible">
+    <div class="parable">
+      <p class="drop-cap">In the ancient dunes where the sea meets the sky, there lived a solitary inventor named Theo…</p>
+      <p>He gave his creatures hollow limbs of yellow pipe and the breath of the wind itself. He called them <em>Strandbeests</em>.</p>
+      <p class="quest">Build them in the glowing realm of light and code. Breathe life into machines with understanding and patience.</p>
+      <button id="begin-btn" class="primary">Enter the Workshop</button>
+    </div>
+  </div>
+
+  <div id="app" class="hidden">
+    <header>
+      <h1>Windwalker</h1>
+      <span class="subtitle">Strandbeest Workshop</span>
+      <div class="header-actions">
+        <button id="btn-challenges" class="ghost" title="Challenges">Challenges</button>
+        <button id="btn-museum" class="ghost" title="Museum of Life">Museum</button>
+        <button id="btn-analysis" class="ghost toggle" title="Linkage analysis">Analysis</button>
+        <button id="btn-wind" class="wind-btn" disabled>Summon Wind</button>
+      </div>
+    </header>
+
+    <aside id="palette">
+      <button id="btn-quick-build" class="primary quick-build" type="button">⚡ Spawn 4-leg walker</button>
+      <p class="hint">Click a part, then click the sand · Drag joints together to connect</p>
+      <h3>Leg Kits</h3>
+      <div id="kit-list"></div>
+      <hr />
+      <h2>Sacred Parts</h2>
+      <div id="part-list"></div>
+      <hr />
+      <div class="tools">
+        <button id="btn-move" class="tool active">Move</button>
+        <button id="btn-delete" class="tool">Remove</button>
+        <button id="btn-clear" class="tool danger">Clear</button>
+      </div>
+      <h3>Export</h3>
+      <p class="hint">STL = 3D print · DXF = 2D plans (mm)</p>
+      <div class="export-tools">
+        <button id="btn-export-stl" class="tool" type="button">STL</button>
+        <button id="btn-export-dxf" class="tool" type="button">DXF</button>
+      </div>
+      <div id="challenge-panel" class="panel hidden">
+        <h3 id="challenge-title">Challenge</h3>
+        <p id="challenge-desc"></p>
+        <div class="progress"><div id="challenge-progress"></div></div>
+      </div>
+    </aside>
+
+    <main id="viewport-wrap">
+      <canvas id="canvas"></canvas>
+      <div id="hud">
+        <span id="mode-label">Move · click parts to place</span>
+        <span id="placement-hint" class="hidden"></span>
+        <span id="wind-meter"><span class="wind-icon">≋</span> <span id="wind-value">0</span>%</span>
+      </div>
+      <div id="analysis-panel" class="hidden">
+        <h3>Linkage Analysis</h3>
+        <div id="analysis-content">
+          <p class="muted">Select a leg or place a Jansen kit to see holy-number deviation.</p>
+        </div>
+        <canvas id="footpath-canvas" width="200" height="120"></canvas>
+      </div>
+      <div id="toast"></div>
+    </main>
+
+    <aside id="museum-panel" class="side-panel hidden">
+      <h2>Museum of Life</h2>
+      <p class="hint">Creations that walked with grace are remembered here.</p>
+      <form id="save-form" class="hidden">
+        <input type="text" id="beast-name" placeholder="Name your Strandbeest" maxlength="40" />
+        <button type="submit" class="primary">Preserve</button>
+      </form>
+      <ul id="museum-list"></ul>
+      <button id="close-museum" class="ghost">Close</button>
+    </aside>
+
+    <aside id="challenges-side" class="side-panel hidden">
+      <h2>Path of the Windwalker</h2>
+      <ul id="challenges-list"></ul>
+      <button id="close-challenges" class="ghost">Close</button>
+    </aside>
+  </div>
+
+  <!-- Three.js vendored locally (ES modules, no deprecated UMD build) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./js/lib/three/three.module.js",
+      "three/addons/": "./js/lib/three/addons/"
+    }
+  }
+  </script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
