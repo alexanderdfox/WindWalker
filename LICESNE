@@ -1,0 +1,104 @@
+# Community Reciprocity License (CRL) v1.1  
+Copyright (c) [2026] [Alexander Dewey Fox]
+
+Permission is granted to use, copy, modify, and distribute this Software subject to the following terms.
+
+---
+
+## Definitions
+
+**"Software"** means the original work and any portion thereof.
+
+**"Modified Version"** means any work that incorporates, alters, extends, adapts, derives from, or is based on the Software.
+
+**"Forked Version"** means any independently distributed Modified Version that is not solely an internal/private modification.
+
+**"Source Code"** means the preferred form of the work for making modifications.
+
+**"Downstream Recipient"** means any person or entity receiving the Software or any Modified Version.
+
+---
+
+## Grant of Rights
+
+Subject to compliance with this License, each recipient is granted a worldwide, non-exclusive, royalty-free license to use, reproduce, modify, and distribute the Software.
+
+---
+
+## Contribution Requirement Upon Distribution
+
+Any person or entity that distributes a Modified Version or Forked Version shall:
+
+1. Make available the complete corresponding Source Code of that Modified Version under this same License; and  
+2. Ensure the Source Code is provided either:
+   - Along with the distributed work, or  
+   - Through a publicly accessible repository maintained for at least three (3) years after the last distribution of that version.
+
+---
+
+## Reciprocal Fork Return Requirement (Core Reciprocity Clause)
+
+Any Forked Version must be made available under this License and must be:
+
+1. Returned upstream to the original Software project (or its designated maintainer, if any), and  
+2. Shared downstream, such that every Downstream Recipient of that Forked Version is also granted the same rights under this License, including access to Source Code.
+
+This obligation applies recursively to all subsequent Forked Versions, such that every Fork inherits the same requirement to return improvements upstream and propagate the same rights downstream.
+
+---
+
+## Preservation of Improvements
+
+Any modification, bug fix, enhancement, optimization, extension, or additional functionality incorporated into a distributed Modified Version or Forked Version shall be licensed under this License.
+
+No distributor may impose additional restrictions that would prevent any recipient from exercising the rights granted herein.
+
+---
+
+## Transitive Reciprocity Obligation
+
+All rights and obligations under this License are:
+
+- Perpetual  
+- Irrevocable (except under Termination below)  
+- Transitive, applying equally to all downstream recipients  
+
+No recipient may break the chain of obligations by re-licensing, privatizing, or restricting any Forked Version.
+
+---
+
+## Attribution
+
+Copies and Modified Versions must preserve:
+
+- Copyright notices  
+- License notices  
+- A record of material modifications  
+
+---
+
+## Patent Grant
+
+Contributors grant recipients a perpetual, worldwide, royalty-free patent license covering their contributions to the extent necessary to use, modify, and distribute those contributions.
+
+---
+
+## Termination
+
+Any rights granted under this License terminate automatically upon violation of its terms.
+
+Rights may be reinstated if the violation is cured within thirty (30) days of receiving notice.
+
+Termination does not eliminate obligations already incurred under the Reciprocal Fork Return Requirement for distributed versions.
+
+---
+
+## Disclaimer of Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+
+---
+
+## Limitation of Liability
+
+IN NO EVENT SHALL ANY COPYRIGHT HOLDER OR CONTRIBUTOR BE LIABLE FOR ANY DAMAGES ARISING FROM THE SOFTWARE OR ITS USE.
